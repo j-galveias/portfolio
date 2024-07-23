@@ -4,9 +4,7 @@ import NavBar from "~/components/NavBar.vue";
 </script>
 
 <template>
-  <div class="flex flex-col bg-gray-800 justify-between w-screen h-screen">
-    <NavBar></NavBar>
-    <NuxtPage />
-    <Footer></Footer>
-  </div>
+  <NavBar></NavBar>
+  <NuxtPage />
+  <Footer></Footer>
 </template>
