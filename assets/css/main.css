@@ -6,4 +6,8 @@
     body, html, #__nuxt{
         @apply h-screen m-0 p-0 bg-gray-800;
     }
+
+    .content {
+        @apply px-20 py-10 flex grow mt-20 flex-col
+    }
 }

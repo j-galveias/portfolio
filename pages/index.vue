@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex justify-center items-center h-full w-full gap-20 px-20">
+  <div class="flex justify-center items-center h-full w-full gap-20">
     <img
       class="rounded-full h-72 w-72"
       src="/images/profilePic.jpg"

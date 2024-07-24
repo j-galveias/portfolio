@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-10 h-full w-full px-20 py-20">
+  <div class="flex flex-col gap-10 h-full w-full">
     <span class="text-white text-3xl underline">
       Projects:
     </span>

@@ -3,5 +3,5 @@
 </script>
 
 <template>
-asdas
+  <div> asdasd </div>
 </template>

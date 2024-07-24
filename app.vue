@@ -6,7 +6,7 @@ import NavBar from '~/components/NavBar.vue'
 <template>
   <div class="flex h-screen flex-col">
     <NavBar />
-    <div class="flex grow flex-col">
+    <div class="content">
       <NuxtPage />
     </div>
     <Footer />
