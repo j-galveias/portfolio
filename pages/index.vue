@@ -3,7 +3,11 @@
 
 <template>
   <div class="flex justify-center items-center h-full w-full gap-20 px-20">
-    <img class="rounded-full h-72 w-72" src="/images/profilePic.jpg" alt="Profile picture">
+    <img
+      class="rounded-full h-72 w-72"
+      src="/images/profilePic.jpg"
+      alt="Profile picture"
+    >
     <div class="flex flex-col gap-10 text-white">
       <span class="text-8xl font-bold">Joao Galveias</span>
       <span class="text-3xl">

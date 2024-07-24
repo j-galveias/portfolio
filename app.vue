@@ -1,10 +1,14 @@
 <script setup lang="ts">
-import Footer from "~/components/Footer.vue";
-import NavBar from "~/components/NavBar.vue";
+import Footer from '~/components/Footer.vue'
+import NavBar from '~/components/NavBar.vue'
 </script>
 
 <template>
-  <NavBar></NavBar>
-  <NuxtPage />
-  <Footer></Footer>
+  <div class="flex h-screen flex-col">
+    <NavBar />
+    <div class="flex grow flex-col">
+      <NuxtPage />
+    </div>
+    <Footer />
+  </div>
 </template>
