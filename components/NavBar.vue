@@ -4,7 +4,7 @@ import paths from '~/utils/paths'
 
 const router = useRouter()
 
-const selected = ref('index')
+const selected = ref('')
 
 onMounted(() => {
   selected.value = paths.find(p =>
