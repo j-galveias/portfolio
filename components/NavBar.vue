@@ -32,6 +32,7 @@ onMounted(() => {
       label="Resume"
       type="icon-label"
       icon="far fa-file"
+      external
       navigate-to="/cv/Resume2024.pdf"
     />
   </nav>

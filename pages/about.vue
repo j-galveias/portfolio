@@ -6,7 +6,7 @@
     <div class="flex w-full items-center justify-center">
       <img
         class="rounded-full h-60 w-60"
-        src="/images/profilePic.jpg"
+        src="~/assets/images/profilePic.jpg"
         alt="Profile picture"
       >
     </div>
