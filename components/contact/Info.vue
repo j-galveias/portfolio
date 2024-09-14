@@ -21,9 +21,12 @@ const link = computed(() => props.isEmail ? email.value : props.contact)
       :icon="icon"
     />
     :
-    <span
+    <NuxtLink
       class="text-2xl hover:underline hover:text-indigo-500 cursor-pointer"
-      @click="navigateLink(contact)"
-    >{{ link }}</span>
+      :to="contact"
+      target="_blank"
+    >
+      {{ link }}
+    </NuxtLink>
   </div>
 </template>
