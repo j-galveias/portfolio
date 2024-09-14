@@ -1,37 +1,39 @@
 <script setup lang="ts">
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 type Props = {
   label?: string
   navigateTo?: string
   type: ButtonType
   icon?: string
+  external?: boolean
 }
 
-const props = defineProps<Props>()
-
-async function navigate() {
-  await navigateTo(props.navigateTo, {
-    external: true,
-    open: {
-      target: '_blank',
-    },
-  })
-}
+defineProps<Props>()
 </script>
 
 <template>
-  <div
-      class="flex justify-center items-center text-white cursor-pointer select-none"
-      :class="type !== 'icon'
-      ? 'gap-2 bg-gray-800 rounded-xl h-16 w-32 active:bg-cyan-800 active:border-2 active:border-cyan-950'
-      : ''"
-      @click="navigateTo ? navigate() : () => {} "
-  >
-    <font-awesome-icon
-        v-if="type !== 'label' && icon"
-        class="text-xl"
-        :icon="icon!"/>
-    <span v-if="type !== 'icon' && label">{{ label }}</span>
-  </div>
+  <KeepAlive>
+    <NuxtLink
+      :is="navigateTo ? 'NuxtLink' : 'div'"
+      class="flex items-center justify-center"
+      :class="{ button: type !== 'icon' }"
+      :to="navigateTo !== undefined ? navigateTo : undefined"
+      target="_blank"
+      :external
+    >
+      <div
+        class="flex justify-center items-center text-white cursor-pointer select-none"
+        :class="{ 'px-4 gap-2': type !== 'icon' }"
+      >
+        <font-awesome-icon
+          v-if="type !== 'label' && icon"
+          class="text-xl"
+          :class="{ 'hover:text-indigo-500': type === 'icon' }"
+          :icon="icon!"
+        />
+        <span v-if="type !== 'icon' && label">{{ label }}</span>
+      </div>
+    </NuxtLink>
+  </KeepAlive>
 </template>

@@ -7,18 +7,14 @@ type Props = {
   url: string
 }
 
-const props = defineProps<Props>()
-
-const stack = computed(() => {
-  return props.stack.join(', ')
-})
+defineProps<Props>()
 </script>
 
 <template>
-  <div class="flex items-center text-white rounded-2xl bg-teal-600 w-full p-6 gap-6">
-    <div class="flex  w-full h-full gap-6">
+  <div class="flex items-center text-white rounded-2xl bg-indigo-500/40 w-full p-6 gap-6">
+    <div class="flex w-full h-full gap-6">
       <img
-        class="h-32 w-42 rounded-xl"
+        class="h-32 max-w-40 rounded-xl"
         :src="thumbnail"
         alt="thumbnail"
       >
@@ -27,7 +23,7 @@ const stack = computed(() => {
         <div class="whitespace-pre-line">
           {{ description }}
         </div>
-        <div><strong>Stack: </strong>{{ stack }}</div>
+        <div><strong>Stack: </strong>{{ listToString(stack) }}</div>
       </div>
     </div>
     <Button
@@ -35,6 +31,7 @@ const stack = computed(() => {
       type="icon-label"
       icon="fas fa-arrow-up-right-from-square"
       :navigate-to="url"
+      external
     />
   </div>
 </template>

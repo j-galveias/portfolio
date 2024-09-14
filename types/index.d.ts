@@ -1,5 +1,3 @@
-export { };
-
-declare global {
+export declare global {
     type ButtonType = 'icon' | 'icon-label' | 'label'
 }

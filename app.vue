@@ -4,7 +4,10 @@ import NavBar from '~/components/NavBar.vue'
 </script>
 
 <template>
-  <div class="flex h-screen flex-col">
+  <div id="smallStars" />
+  <div id="mediumStars" />
+  <div id="bigStars" />
+  <div class="flex h-screen flex-col absolute w-full">
     <NavBar />
     <div class="content">
       <NuxtPage />

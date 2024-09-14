@@ -7,18 +7,27 @@
     <span class="text-3xl underline">
       Work:
     </span>
-    <WorkInfo
+    <WorkDetails
       company="Tpg"
       role="Full-Stack Developer"
       start-date="March 2023"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere eleifend augue, vel tempor orci. Suspendisse nisl ante, feugiat sit amet velit in, ornare mollis urna. Proin at quam id dolor ultricies placerat. Aenean dictum est ex, sit amet sollicitudin est sollicitudin vitae. Ut egestas elit a lacus sodales, quis bibendum urna congue. "
+      location="Remote, Portugal"
+      description="Currently responsible for rebuilding and maintaining B2B, B2G, ticket shop, and administration websites.
+      I work on both the frontend and backend of these applications."
+      :stack="['Nuxt JS', 'Kotlin', 'Java', 'TypeScript', 'SQL']"
+      :tools="['Figma', 'Jira', 'Gitlab', 'IntelliJ']"
     />
-    <WorkInfo
+    <WorkDetails
       company="NTT Data"
       role="AR Developer"
       start-date="July 2022"
       end-date="Sept. 2022"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere eleifend augue, vel tempor orci. Suspendisse nisl ante, feugiat sit amet velit in, ornare mollis urna. Proin at quam id dolor ultricies placerat. Aenean dictum est ex, sit amet sollicitudin est sollicitudin vitae. Ut egestas elit a lacus sodales, quis bibendum urna congue. "
+      location="Lisbon, Portugal"
+      description="Autonomously developed an augmented reality mobile app for remote assistance, using Unity.
+      Used Agora SDK to handle the videocall and message chat.
+      Used ARCore for the AR drawings and AR icons."
+      :stack="['C#']"
+      :tools="['Unity', 'Microsoft Visual Studio', 'ARCore']"
     />
   </div>
 </template>
